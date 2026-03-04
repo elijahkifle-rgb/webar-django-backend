@@ -1,6 +1,6 @@
 ﻿# Use a slim Python image
 FROM python:3.12-slim
-
+# force rebuild
 # Set environment variables to avoid Python buffering and pyc files
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
