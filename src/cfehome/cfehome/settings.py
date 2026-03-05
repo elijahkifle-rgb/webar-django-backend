@@ -31,6 +31,8 @@ print("="*60, file=sys.stderr)
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
+     'scores', 
+       'whitenoise',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
