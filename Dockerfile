@@ -17,6 +17,7 @@ RUN pip install --no-cache-dir -r /tmp/requirements.txt
 
 # Copy project files
 COPY . /app
+RUN python manage.py collectstatic --noinput
 
 # Use JSON format for CMD (recommended)
 CMD ["gunicorn", "src.cfehome.cfehome.wsgi:application", "--bind", "0.0.0.0:8080"]
