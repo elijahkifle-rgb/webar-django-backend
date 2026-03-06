@@ -1,5 +1,6 @@
 import sys
 print("Loading scores/urls.py", file=sys.stderr)
+
 from django.urls import path
 from . import views
 
