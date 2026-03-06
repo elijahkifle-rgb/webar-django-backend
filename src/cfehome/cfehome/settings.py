@@ -17,7 +17,7 @@ DEBUG = os.environ.get('DJANGO_DEBUG', 'False') == 'True'
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '.railway.app,127.0.0.1,localhost').split(',')
 
 # Hardcoded CSRF trusted origin – replace with your Railway domain if different
-CSRF_TRUSTED_ORIGINS = ['https://webar-django-backend-production-565e.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://webar-django-backend-production-3567.up.railway.app']
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # --- DEBUG PRINTS (visible in Railway logs) ---
@@ -31,8 +31,8 @@ print("="*60, file=sys.stderr)
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
-     'scores', 
-       'whitenoise',
+    'scores', 
+    'whitenoise',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
