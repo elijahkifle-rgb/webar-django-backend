@@ -17,6 +17,7 @@ RUN pip install --no-cache-dir -r /tmp/requirements.txt
 
 # Copy project files
 COPY . /app
+ENV DJANGO_SETTINGS_MODULE=cfehome.cfehome.settings
 RUN python manage.py collectstatic --noinput
 
 # Use JSON format for CMD (recommended)
