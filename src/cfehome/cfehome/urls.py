@@ -1,7 +1,8 @@
 from django.contrib import admin
 from django.urls import path, include
 from django.http import JsonResponse
-
+import sys
+print("MAIN URLS LOADING", file=sys.stderr)
 def ping(request):
     return JsonResponse({"ping": "pong"})
 
