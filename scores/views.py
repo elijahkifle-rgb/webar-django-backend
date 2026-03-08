@@ -3,7 +3,8 @@ from django.http import JsonResponse
 from django.conf import settings
 
 API_KEY = '88687ba1669644d2b1562ab680e78bf6'
-
+def test_api(request):
+    return JsonResponse({'message': 'API is working'})
 def live_score(request, match_id):
     try:
         response = requests.get(
